@@ -27,11 +27,32 @@ body {
     margin-bottom: .68rem;
     position: relative;
     top: -3;
+    text-align: center;
 }
 
 .logo-wrapper {
     text-align: center;
     width: 100%;
+}
+
+.socials {
+    text-align: center;
+    position: relative;
+    left: -22;
+    font-size: 17px;
+}
+
+.banner-socials {
+    background-color: rgb(238, 103, 49);
+    color: white;
+    padding: 7.2px 0;
+    text-align: center;
+    margin: 0;
+}
+
+i {
+    color: white;
+    padding-left: 10px;
 }
 
 .primary-navigation {
@@ -77,4 +98,20 @@ body {
     --gap: 2em;
     padding: min(30vh, 10rem);
     }    
+}
+
+.container {
+    height: auto;
+    width: 20%;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    display: block;
+    transition: ease-in 2s;
+}
+
+.container:hover img {
+    transform: scale(1.3);
 }
