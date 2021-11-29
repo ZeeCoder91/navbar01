@@ -119,8 +119,9 @@ i {
     display: flex;
     font-size: .8em;
     justify-content: flex-start;
-    width: 64%;
+    width: 80%;
     padding: 10px 0;
+    margin-left: -10;
 }
 
 .subnav-items {
@@ -144,6 +145,27 @@ i {
 main {
 
 }
+
+/* ref infos on bio page */
+
+.ref-bio {
+    width: 80%;
+    margin-left: 200px;
+}
+.ref-name {
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.officials-no {
+    color: #999;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: -20px;
+}
+
+
 
 @media (max-width: 65em) {
     .primary-navigation {
