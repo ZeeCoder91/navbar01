@@ -1,9 +1,14 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
 .fa-bars {
     color: white;
 }
@@ -67,7 +72,6 @@ i {
     justify-content: center;
     backdrop-filter: blur(1rem);
     z-index: 1000;
-    border: solid 5px blue;
     align-items: center;
 }
 
@@ -79,6 +83,50 @@ i {
     width: 2rem;
     z-index: 9999;
 }
+
+.hero-container > .hero-img {
+    background: url(img/GettyImages-900968328-e1590591200193.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 75%;
+    text-indent: -9999999;
+}
+
+.hero-text {
+    color: white;
+    font-size: 3.5em;
+    width: 500px;
+    text-transform: uppercase;
+    margin-left: 200px;
+    position: relative;
+    top: -470;
+    left: -20;
+    line-height: 55px;
+}
+.sub-nav {
+    background-color: rgb(221, 221, 221);
+    border-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -240;
+}
+
+.subnav-content {
+    display: flex;
+    font-size: .8em;
+    justify-content: flex-start;
+    width: 64%;
+    padding: 10px 0;
+}
+
+.subnav-items {
+    margin-left: 10px;
+}
+
 
 @supports(backdrop-filter: blur(1rem)) {
     .primary-navigation{ 
@@ -93,25 +141,13 @@ i {
     text-transform: uppercase;
 }
 
+main {
+
+}
+
 @media (max-width: 65em) {
     .primary-navigation {
     --gap: 2em;
     padding: min(30vh, 10rem);
     }    
-}
-
-.container {
-    height: auto;
-    width: 20%;
-    overflow: hidden;
-}
-
-.container img {
-    width: 100%;
-    display: block;
-    transition: ease-in 2s;
-}
-
-.container:hover img {
-    transform: scale(1.3);
 }
