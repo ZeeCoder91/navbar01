@@ -22,7 +22,6 @@ a {
     align-items: center;
     background-color: black;
     justify-content: space-between;
-    
 }
 
 .logo {
@@ -84,15 +83,16 @@ i {
     z-index: 9999;
 }
 
-.hero-container > .hero-img {
-    background: url(img/GettyImages-900968328-e1590591200193.jpg);
+.hero-container {
+    background-image: url(img/GettyImages-900968328-e1590591200193.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
-    width: 100%;
+    align-items: center;
     height: 75%;
-    text-indent: -9999999;
+    margin: 0;
+    overflow: hidden;
 }
 
 .hero-text {
@@ -100,19 +100,15 @@ i {
     font-size: 3.5em;
     width: 500px;
     text-transform: uppercase;
-    margin-left: 200px;
-    position: relative;
-    top: -470;
-    left: -20;
+    margin-left: 100px;
     line-height: 55px;
-}
+} 
+
 .sub-nav {
     background-color: rgb(221, 221, 221);
     border-color: rgb(51, 51, 51);
     display: flex;
     justify-content: center;
-    position: relative;
-    top: -240;
 }
 
 .subnav-content {
@@ -142,13 +138,10 @@ i {
     text-transform: uppercase;
 }
 
-main {
-
-}
-
 /* ref infos on bio page */
 
 .ref-bio {
+    border: solid 2px red;
     width: 80%;
     margin-left: 200px;
 }
